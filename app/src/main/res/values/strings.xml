@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">maktab_HW_18_1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="online_person">Online person</string>
+    <string name="offline_person">Offline Person</string>
+    <string name="add_or_remove">addOrRemove</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/onlineListFragment">
+
+    <action
+        android:id="@+id/to_Detail"
+        app:destination="@id/detailFragment" />
+    <fragment
+        android:id="@+id/databaseListFragment"
+        android:name="com.pourkazemi.mahdi.maktab_hw_18_1.ui.DatabaseListFragment"
+        android:label="fragment_database_list"
+        tools:layout="@layout/fragment_database_list" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.pourkazemi.mahdi.maktab_hw_18_1.ui.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="receivedPerson"
+            app:argType="com.pourkazemi.mahdi.maktab_hw_18_1.data.model.Person" />
+    </fragment>
+    <fragment
+        android:id="@+id/onlineListFragment"
+        android:name="com.pourkazemi.mahdi.maktab_hw_18_1.ui.OnlineListFragment"
+        android:label="fragment_online_list"
+        tools:layout="@layout/fragment_online_list" />
+</navigation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/onlineListFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_cloud_queue_24"
+        android:title="@string/online_person"/>
+    <item
+        android:id="@+id/databaseListFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_cloud_off_24"
+        android:title="@string/offline_person"/>
+</menu>

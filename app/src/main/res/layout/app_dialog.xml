@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="560dp"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/imageView_dialog"
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        app:layout_constraintBottom_toTopOf="@+id/person_name"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+
+    <EditText
+        android:id="@+id/person_name"
+        android:layout_width="210dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/person_family"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_dialog" />
+
+    <EditText
+        android:id="@+id/person_family"
+        android:layout_width="210dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Family"
+        app:layout_constraintBottom_toTopOf="@+id/national_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/person_name" />
+
+    <EditText
+        android:id="@+id/national_code"
+        android:layout_width="210dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="National Code"
+        app:layout_constraintBottom_toTopOf="@+id/Sleep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/person_family" />
+
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watch TV"
+        android:padding="4dp"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sport"
+        app:layout_constraintTop_toTopOf="@+id/sport"
+        app:layout_constraintVertical_bias="0.0"
+        android:focusable="true" />
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Game"
+        android:padding="4dp"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Sleep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Sleep"
+        app:layout_constraintTop_toTopOf="@+id/Sleep"
+        android:focusable="true" />
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/sport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sport"
+        android:padding="4dp"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/don_button"
+        app:layout_constraintEnd_toStartOf="@+id/tv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sleep"
+        android:focusable="true" />
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/Sleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sleep again"
+        android:padding="4dp"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/sport"
+        app:layout_constraintEnd_toStartOf="@+id/game"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/national_code"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/don_button"
+        android:layout_width="210dp"
+        android:layout_height="64dp"
+        android:text="OK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sport" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
